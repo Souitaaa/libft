@@ -6,7 +6,7 @@
 /*   By: csouita <csouita@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 21:47:29 by csouita           #+#    #+#             */
-/*   Updated: 2023/12/06 17:51:50 by csouita          ###   ########.fr       */
+/*   Updated: 2023/12/13 20:05:56 by csouita          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,13 +42,13 @@ char	*ft_itoa(int n)
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
-	*(str + len + 1) = '\0';
+	*(str + len) = '\0';
 	while (len--)
 	{
 		*(str + len) = (number % 10) + 48;
 		number /= 10;
 	}
 	if (n < 0)
-		*(str + 0) = '-';
+		*(str) = '-';
 	return (str);
 }

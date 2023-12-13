@@ -6,7 +6,7 @@
 /*   By: csouita <csouita@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 16:09:02 by csouita           #+#    #+#             */
-/*   Updated: 2023/12/07 09:45:27 by csouita          ###   ########.fr       */
+/*   Updated: 2023/12/12 16:36:54 by csouita          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,3 +105,19 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (list(lst, s, c));
 }
+
+// int main ()
+// {
+// 	int i = 0 ;
+// 	char **result = ft_split("sss fff lll",' ');
+// 	while (result[i])
+// 	{
+// 		printf("%s\n",result[i]) ;
+// 		i++;
+// 	}
+// 	for (i = 0 ; result[i] ; i++)
+// 	{
+// 		free(result[i]);
+// 	}
+// 	free(result);
+// }

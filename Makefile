@@ -6,7 +6,7 @@
 #    By: csouita <csouita@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/07 19:34:22 by csouita           #+#    #+#              #
-#    Updated: 2023/12/07 19:34:23 by csouita          ###   ########.fr        #
+#    Updated: 2023/12/13 19:37:39 by csouita          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,9 +20,9 @@ SRCS			=	ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_putchar_fd.c ft_split.c \
 					ft_putstr_fd.c  ft_strjoin.c ft_strmapi.c ft_strtrim.c
 OBJS			= $(SRCS:.c=.o)
 
-CC				= gcc
+CC				= cc
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -I.
+CFLAGS			= -Wall -Wextra -Werror 
 
 NAME			= libft.a
 

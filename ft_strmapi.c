@@ -6,7 +6,7 @@
 /*   By: csouita <csouita@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 18:27:19 by csouita           #+#    #+#             */
-/*   Updated: 2023/12/07 17:51:24 by csouita          ###   ########.fr       */
+/*   Updated: 2023/12/13 19:39:34 by csouita          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	size_t	len;
 
 	len = ft_strlen(s);
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	str = malloc(sizeof(char) * (len + 1));
 	if (!str)

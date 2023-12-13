@@ -6,13 +6,13 @@
 /*   By: csouita <csouita@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 21:48:08 by csouita           #+#    #+#             */
-/*   Updated: 2023/12/07 19:38:30 by csouita          ###   ########.fr       */
+/*   Updated: 2023/12/13 20:53:59 by csouita          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	s;
@@ -39,8 +39,8 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 	else
 		return (d + s);
 }
-int main()
-{
-	int v = ft_strlcat(NULL, NULL , 0);
-	int v = strlcat(NULL, NULL , 0);
-}
+// int main()
+// {
+// 	int v = ft_strlcat(NULL, NULL , 0);
+// 	int v = strlcat(NULL, NULL , 0);
+// }

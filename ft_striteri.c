@@ -6,7 +6,7 @@
 /*   By: csouita <csouita@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 21:47:00 by csouita           #+#    #+#             */
-/*   Updated: 2023/12/04 20:46:57 by csouita          ###   ########.fr       */
+/*   Updated: 2023/12/13 19:43:02 by csouita          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	unsigned int	i;
 
 	i = 0;
+	if (!f || !s)
+		return ;
 	if (s)
 	{
 		while (s[i])
@@ -39,7 +41,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 // }
 // int main ()
 // {
-// 	char c[] = "souita" ;
+// 	char c[] = "NULL" ;
 // 	ft_striteri(c ,uppercase) ;
 // 	printf("%s",c );
 // 	return (0);

@@ -6,7 +6,7 @@
 /*   By: csouita <csouita@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 21:47:42 by csouita           #+#    #+#             */
-/*   Updated: 2023/12/10 21:36:15 by csouita          ###   ########.fr       */
+/*   Updated: 2023/12/13 19:37:47 by csouita          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-// int main ()
-// {
-// 	char dest[] = "hr";
-//  	char *result = ft_memcpy(dest,dest,2);
-// 	//char *result1 =memcpy("souita","souita",2);
-// 	printf("%s\n",result);
-// 	//printf("%s-",result1);
-// }
